@@ -1,0 +1,238 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+.navbar {
+  background-color: #474747;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonform {
+  background-color: #364f6e;
+  color: white;
+  height: 44px;
+}
+
+.bannerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pit {
+  color: white;
+}
+
+.pit:hover {
+  color: white;
+  text-shadow: 8px 8px 20px grey;
+}
+
+.vertical-hr {
+  border: none;
+  border-left: 1px solid #777777;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.divSearch {
+  margin-left: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.textNav {
+  color: white;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.spaceText {
+  margin-left: 950px;
+}
+
+.blanco {
+  background-color: white;
+  width: 100%;
+  height: 1px;
+}
+
+.logo {
+  background: linear-gradient(to bottom, #364f6e, #6c7d95);
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoCasa {
+  height: 50%;
+  margin-left: 10px;
+}
+
+.imgSearch {
+  background-color: #93a3b4;
+  z-index: 200;
+  height: 37px;
+  margin-left: 0px;
+  height: 40px;
+}
+
+.bannerTitle {
+  color: #93a3b4;
+  font-size: 85px;
+  font-weight: 500;
+  letter-spacing: -4px;
+  font-stretch: ultra-expanded;
+  margin-top: 15px;
+}
+
+.bannerTextSec {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: BOLD;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.secondMenu {
+  background-color: #0e4164;
+  width: 100%;
+  height: 36px;
+}
+
+.vertical-hr2 {
+  border: none;
+  border-left: 1px solid #777777;
+  height: 35px;
+  margin: 0;
+  display: inline-block;
+}
+
+/* CSS FOR THE MAIN PAGE */
+.mainIndex {
+  background-color: white;
+  padding-right: 30px;
+}
+/* CSS FOR THE MAIN PAGE */
+
+/* footer */
+.footer2 {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer3 {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerTitle {
+  margin-top: 20px;
+}
+
+.footerTitle2 {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.footerInfo {
+  margin-top: 10px;
+  color: #0e4164;
+}
+/* footer */
+
+/* hidden main survay button */
+.StartSurveyMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.StartSurvey {
+  width: 150px;
+  background-color: #a01621;
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+.StartSurvey:hover {
+  background-color: #005792;
+  border: 1px solid white;
+  color: #ffffff;
+  border: 1px solid #0e4164;
+}
+
+.AddChild {
+  width: 150px;
+  background-color: #578ac1;
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+.AddChild:hover {
+  width: 150px;
+  background-color: #68a5e7;
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+/* hidden main survay button */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1400px) {
+  .bannerTextSec {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bannerTextSec {
+    display: none;
+  }
+
+  .divSearch {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+}

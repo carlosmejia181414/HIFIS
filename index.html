@@ -1,0 +1,3432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="QUOTE - Request a quote for every type of companies"
+    />
+    <meta name="author" content="Ansonika" />
+    <title>OTTAWA CITY - SURVEY /......</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/logoIcon.png" type="image/x-icon" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BASE CSS -->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet" />
+    <link href="css/magnific-popup.min.css" rel="stylesheet" />
+    <link href="css/skins/square/yellow.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/dcae34017c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body style="background-color: #f9f9f9">
+    <div id="loader_form">
+      <div data-loader="circle-side-2"></div>
+    </div>
+    <!-- /Loader_form -->
+
+    <header>
+      <div class="navbar">
+        <div class="textNav spaceText">
+          Français
+          <hr class="vertical-hr" />
+          Demo Organization
+          <hr class="vertical-hr" />
+          Admin
+        </div>
+      </div>
+
+      <div class="blanco"></div>
+      <div class="logo">
+        <div class="container bannerFlex">
+          <div class="bannerInfo">
+            <span class="bannerTitle">HIFIS</span>
+            <img class="logoCasa" src="img/logoCasa.png" alt="logoCasa" />
+            <p class="bannerTextSec">
+              HOMELESS INDIVIDUALS AND<br />FAMILIES INFORMATION SYSTEM
+            </p>
+          </div>
+          <div class="divSearch">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="client Search"
+              />
+              <div class="input-group-text buttonform">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondMenu">
+        <div class="textNav">
+          <hr class="vertical-hr2" />
+          <a href="index.html"><span class="pit">PIT Count</span> </a>
+          <hr class="vertical-hr2" />
+        </div>
+      </div>
+      <!-- <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="javascript:void(0);"><span>Menu
+        mobile</span></a>
+    <nav class="main_nav">
+      <ul class="nav nav-tabs">
+        <li><a href="#tab_1" data-bs-toggle="tab">Start Survey</a></li>
+      </ul>
+    </nav> -->
+    </header>
+    <!-- /header -->
+    <!-- MAIN PAGE BEFORE TO LOAD THE SURVEY -->
+    <div class="container mainIndex">
+      <div id="middle-wizard">
+        <!-- <form action="" name="startForm" onsubmit="return validateForm()"> -->
+          <div class="step">
+            <h2 class="main_question">Volunteer Information</h2>
+            <!-- <h3 class="main_question">Volunteer Information</h3> -->
+            <hr class="hrTitle" />
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="firstname">First name:</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="startfirstname"
+                    class="required form-control"
+                  />
+                </div>
+              </div>
+              <!-- /col-sm-6 -->
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="location">Location:</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="startlocation"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <!-- /col-sm-6 -->
+            </div>
+            <!-- /row -->
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email">Your Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="startemail"
+                    class="required form-control"
+                  />
+                </div>
+              </div>
+              <!-- /col-sm-6 -->
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="telephone">Your Telephone:</label>
+                  <input
+                    type="text"
+                    id="telephone"
+                    name="telephone"
+                    class="required form-control"
+                  />
+                </div>
+              </div>
+              <!-- /col-sm-6 -->
+            </div>
+            <!-- /row -->
+            <!-- Survey Introduction -->
+            <p class="survey-intro">
+              I am a surveyor for the Ottawa's Point in Time Count. We are
+              conducting a survey to helps us provide better programs and
+              services to individuals and families who are experiencing
+              homelessness. The survey takes about 10 minutes to complete.
+            </p>
+
+            <!-- Consent and Participation -->
+            <div class="consent">
+              <ul>
+                <li>
+                  Participation is voluntary and your name will not be recorded.
+                  This is an anonymous survey
+                </li>
+                <li>
+                  We will be asking a wide range of questions some of which may
+                  be personal to you. You can choose to skip any question or to
+                  stop the interview at any time.
+                </li>
+                <li>
+                  I will read the consent and will ask you if you agree to
+                  participate.
+                </li>
+              </ul>
+
+              <!-- [Continue with the rest of the consent and participation info] -->
+            </div>
+
+            <!-- Agreement Question -->
+            <div class="form-group">
+              <h2 class="main_question">
+                A. Have you answered this survey today or yesterday (<span
+                  id="lbldate"
+                ></span
+                >)?
+              </h2>
+              <div>
+                <div class="form-group radio_questions">
+                  <label
+                    >YES
+                    <input
+                      name="question_1111"
+                      type="radio"
+                      class="icheck required"
+                    />
+                  </label>
+                </div>
+                <div class="form-group radio_questions">
+                  <label
+                    >NO
+                    <input
+                      name="question_1111"
+                      type="radio"
+                      class="icheck required"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="consent-section">
+              <h3 class="main_question">
+                I understand the following, and I agree to be surveyed on the
+                basis that:
+              </h3>
+              <ul>
+                <li>I am at least 16 yrs. of age.</li>
+                <li>I am currently experiencing homelessness.</li>
+                <li>
+                  I can refuse to do the survey or can refuse any question, can
+                  take a break, or end the survey early without it affecting the
+                  services I get now or in the future.
+                </li>
+                <li>
+                  My survey information will go into a secure database that can
+                  only be accessed by people who have signed a confidentiality
+                  form.
+                </li>
+                <li>
+                  The purposes of this survey are to help governments and
+                  agencies better understand housing needs and homelessness. All
+                  the answers will be combined into statistics and used to help
+                  governments and agencies plan services and housing. The
+                  results of the survey will be made public.
+                </li>
+                <li>
+                  I will be asked questions about my age, gender, sexual
+                  orientation, family status and history, language, housing
+                  history including in institutions, citizenship, race,
+                  Indigenous status, military service, health challenges and
+                  income. I will also be asked about my needs and desires for
+                  housing and services, and obstacles I face. None of this
+                  information can be traced to me – everyone’s answers will be
+                  pooled.
+                </li>
+                <li>
+                  If I tell you that I'm going to harm myself or someone else, I
+                  understand that you will have to disclose this information to
+                  authorities.
+                </li>
+              </ul>
+
+              <div class="agreement-section">
+                <h2 class="main_question">B. Consent Agreement</h2>
+                <p class="agreement-text">
+                  Do you agree that the survey consent has been read to you,
+                  that you fully understand the information provided in it, and
+                  that you are voluntarily participating?
+                </p>
+                <div class="form-group options">
+                  <div>
+                    <div class="form-group radio_questions">
+                      <label
+                        >YES
+                        <input
+                          name="question_1112"
+                          type="radio"
+                          class="icheck required"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group radio_questions">
+                      <label
+                        >NO
+                        <input
+                          name="question_1112"
+                          type="radio"
+                          class="icheck required"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group initials-group">
+                  <label for="surveyorInitials" class="initials-label"
+                    >Initials of Surveyor:</label
+                  >
+                  <input
+                    type="text"
+                    id="surveyorInitials"
+                    name="surveyorInitials"
+                    class="form-control initials-input"
+                  />
+                </div>
+              </div>
+              <p>
+                Thank you for agreeing to take part in the survey. Do you have
+                any questions?
+              </p>
+              <p>
+                Please note that you will receive a $10 gift card as a thank you
+                for your participation.
+              </p>
+              <div class="main_nav" style="display: none">
+                <ul class="nav nav-tabs">
+                  <li>
+                    <a
+                      type="submit"
+                      href="#tab_1"
+                      data-bs-toggle="tab"
+                      class="btn btn-primary"
+                      id="SurveyButton"
+                      >Start Survey</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="StartSurveyMain">
+                <button name="forward" class="btn StartSurvey" id="StartSurvey">
+                  Start <i class="fa-regular fa-circle-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container footerFlex">
+        <div class="footerTitle">
+          <span class="footerTitle2">About</span>
+          <div class="footerInfo">
+            <ul>
+              <li>Reaching Home</li>
+              <li>HIFIS</li>
+              <li>Release Notes</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerTitle">
+          <span class="footerTitle2">Terms of Service</span>
+          <div class="footerInfo">
+            <ul>
+              <li>End-User Licence Agreement (EULA)</li>
+              <li>Data Provision Agreement (DPA)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerTitle">
+          <span class="footerTitle2">Support</span>
+          <div class="footerInfo">
+            <ul>
+              <li>Homelessness Learning Hub</li>
+              <li>HIFIS User Guide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer3">
+      <div class="container footerFlex">
+        <div class="footer3Text">Active - Production</div>
+        <div class="footer3Text">Build 4.0.60.1 (2023-10-30)</div>
+      </div>
+    </div>
+    <!-- END MAIN PAGE -->
+    <div class="layer"></div>
+    <!-- /mask -->
+
+    <div id="main_container">
+      <div id="header_in">
+        <a href="#0" class="close_in"><i class="pe-7s-close-circle"></i></a>
+      </div>
+
+      <div class="wrapper_in">
+        <div class="container-fluid">
+          <div class="tab-content">
+            <div class="tab-pane fade" id="tab_1">
+              <div class="subheader" id="quote"></div>
+              <div class="row">
+                <aside class="col-xl-3 col-lg-4">
+                  <h2>THE CITY OF OTTAWA 2023</h2>
+                  <p class="lead">
+                    Have you answered this survey today or yesterday (<span
+                      id="lbldate2"
+                    ></span
+                    >).
+                  </p>
+                  <ul class="list_ok">
+                    <li>
+                      Participation is voluntary and your name will not be
+                      recorded. This is an anonymous survey.
+                    </li>
+                    <li>
+                      We will be asking a wide range of questions some of which
+                      may be personal to you. You can choose to skip any
+                      question or to stop the interview at any time.
+                    </li>
+                    <li>
+                      I will read the consent and will ask you if you agree to
+                      participate.
+                    </li>
+                  </ul>
+                </aside>
+                <!-- /aside -->
+
+                <div class="col-xl-9 col-lg-8">
+                  <div id="wizard_container">
+                    <!-- /top-wizard -->
+
+                    <form name="example-1" id="wrapped" method="POST">
+                      <input
+                        id="website"
+                        name="website"
+                        type="text"
+                        value=""
+                      /><!-- Leave for security protection, read docs for details -->
+                      <div id="middle-wizard">
+                        <!-- ALL QUESTIONS HERE -->
+
+                        <!-- QUESTION 1 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 1/19</strong>
+                          </h3>
+                          <h4>
+                            Where are you staying tonight? / Where did you stay
+                            last night (if surveyed on October 27th)?
+                          </h4>
+                          <div class="form-group select">
+                            <label
+                              for="current_accommodation"
+                              class="select-label"
+                              >Select your current accommodation:</label
+                            >
+                            <div class="styled-select">
+                              <select
+                                id="current_accommodation"
+                                name="current_accommodation"
+                                class="required"
+                                onchange="checkAccommodation(this);"
+                              >
+                                <option value="" selected>Select</option>
+                                <option value="Decline to Answer">
+                                  Decline to Answer
+                                </option>
+                                <option value="Own Apartment / House">
+                                  Own Apartment / House
+                                </option>
+                                <option value="Someone Else's Place">
+                                  Someone Else's Place
+                                </option>
+                                <option value="Motel/Hotel (Self-Funded)">
+                                  Motel/Hotel (Self-Funded)
+                                </option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="Treatment Centre">
+                                  Treatment Centre
+                                </option>
+                                <option value="Jail, Prison, Remand Centre">
+                                  Jail, Prison, Remand Centre
+                                </option>
+                                <option value="Homeless Shelter">
+                                  Homeless Shelter (Emergency, Family, or
+                                  Domestic Violence Shelter)
+                                </option>
+                                <option
+                                  value="Hotel/Motel (Funded by City or Homeless Program)"
+                                >
+                                  Hotel/Motel (Funded by City or Homeless
+                                  Program)
+                                </option>
+                                <option value="Transitional Shelter/Housing">
+                                  Transitional Shelter/Housing
+                                </option>
+                                <option value="Unsheltered in a Public Space">
+                                  Unsheltered in a Public Space (e.g., Street,
+                                  Park, Bus Shelter)
+                                </option>
+                                <option value="Encampment">
+                                  Encampment (e.g., Group of Tents, Makeshift
+                                  Shelters)
+                                </option>
+                                <option value="Vehicle">
+                                  Vehicle (Car, Van, RV, Truck, Boat)
+                                </option>
+                                <option value="Unsure">
+                                  Unsure - Indicate Probable Location Below
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div
+                            id="unsure-location"
+                            class="form-group"
+                            style="display: none"
+                          >
+                            <label for="probable_location"
+                              >If unsure, indicate probable location:</label
+                            >
+                            <input
+                              type="text"
+                              id="probable_location"
+                              name="probable_location"
+                              class="form-control"
+                              placeholder="Enter location"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <h4>
+                              Do you have access to a permanent residence where
+                              you can safely stay as long as you want?
+                            </h4>
+                              <div class="form-group radio_questions">
+                                <label
+                                  >YES
+                                  <input
+                                    name="question_1"
+                                    type="radio"
+                                    value="My budget is between $1000 and $1500"
+                                    class="icheck required"
+                                  />
+                                </label>
+                              </div>
+                              <div class="form-group radio_questions">
+                                <label
+                                  >NO
+                                  <input
+                                    name="question_1"
+                                    type="radio"
+                                    value="My budget is between $1000 and $1500"
+                                    class="icheck required"
+                                  />
+                                </label>
+                              </div>
+                              <div class="form-group radio_questions">
+                                <label
+                                  >DON'T KNOW
+                                  <input
+                                    name="question_1"
+                                    type="radio"
+                                    value="My budget is between $1000 and $1500"
+                                    class="icheck required"
+                                  />
+                                </label>
+                              </div>
+                              <div class="form-group radio_questions">
+                                <label
+                                  >DECLINE TO ANSWER
+                                  <input
+                                    name="question_1"
+                                    type="radio"
+                                    value="My budget is between $1000 and $1500"
+                                    class="icheck required"
+                                  />
+                                </label>
+                              </div>
+                       
+                          </div>
+                        </div>
+                        <!-- QUESTION 1 -->
+                        <script>
+                          function checkAccommodation(selectElement) {
+                            var unsureLocationInput =
+                              document.getElementById("unsure-location");
+                            unsureLocationInput.style.display =
+                              selectElement.value === "Unsure"
+                                ? "block"
+                                : "none";
+                          }
+                        </script>
+                        <!-- QUESTION 2 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 2/19</strong>
+                          </h3>
+                          <h4 class="survey-question">
+                            Do you have family members or anyone else who is
+                            staying with you tonight? / Did you have any family
+                            members or anyone else who stayed with you last
+                            night?
+                          </h4>
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />NONE
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />PARTNER - Survey #:
+
+                              <input
+                                type="text"
+                                name="partner_survey_number"
+                                maxlength="4"
+                                placeholder="# Survey"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />
+                              OTHER ADULT(S)
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />DECLINE TO ANSWER
+                            </label>
+                          </div>
+
+                          <table class="table table-bordered" id="family_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">CHILD(REN)/DEPENDENT(S)</th>
+                                <th scope="col">GENDER</th>
+                                <th scope="col">AGE</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <input
+                                    type="text"
+                                    name="child_gender_1"
+                                    placeholder="Gender"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="number"
+                                    name="child_age_1"
+                                    placeholder="Age"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>
+                                  <input
+                                    type="text"
+                                    name="child_gender_2"
+                                    placeholder="Gender"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="number"
+                                    name="child_age_2"
+                                    placeholder="Age"
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>
+                                  <input
+                                    type="text"
+                                    name="child_gender_3"
+                                    placeholder="Gender"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="number"
+                                    name="child_age_3"
+                                    placeholder="Age"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- Add button to dynamically add more children rows if needed  -->
+                          <button
+                            type="button"
+                            id="addChildButton"
+                            class="btn AddChild"
+                          >
+                            <i class="fa-solid fa-user-plus"></i> Add Child
+                          </button>
+                        </div>
+                        <!-- QUESTION 2 -->
+                        <script>
+                          document.addEventListener(
+                            "DOMContentLoaded",
+                            function () {
+                              var addChildButton =
+                                document.getElementById("addChildButton");
+                              addChildButton.addEventListener(
+                                "click",
+                                function () {
+                                  var tableBody = document.querySelector(
+                                    "#family_table tbody"
+                                  );
+                                  var numChildren = tableBody.rows.length + 1;
+                                  var newRow = tableBody.insertRow();
+                                  newRow.innerHTML =
+                                    "<tr><td>" +
+                                    numChildren +
+                                    '</td><td><input type="text" name="child_gender_' +
+                                    numChildren +
+                                    '" placeholder="Gender"></td><td><input type="number" name="child_age_' +
+                                    numChildren +
+                                    '" placeholder="Age"></td></tr>';
+                                }
+                              );
+                            }
+                          );
+                        </script>
+                        <!-- QUESTION 3 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 3/19</strong>
+                          </h3>
+                          <!-- <h3 class="main_question"><strong>Question 2</strong></h3> -->
+                          <h4>
+                            How old are you? [OR] What year were you born? [If
+                            unsure, ask for best estimate]
+                          </h4>
+
+                          <div class="form-group">
+                            <label for="age">AGE:</label>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="number"
+                              id="age"
+                              name="age"
+                              class="form-control"
+                              placeholder="Enter Age"
+                              style="max-width: 200px"
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label for="year_born">OR YEAR BORN:</label>
+                            <input
+                              type="number"
+                              id="year_born"
+                              name="year_born"
+                              class="form-control"
+                              placeholder="Enter year of birth"
+                              min="1960"
+                              max="2023"
+                              style="max-width: 200px"
+                            />
+                          </div>
+
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />DON'T KNOW
+                            </label>
+                          </div>
+
+                          <div class="form-group checkbox_questions">
+                            <label>
+                              <input
+                                name="question_2[]"
+                                type="checkbox"
+                                value="Web site design"
+                                class="icheck required"
+                              />DECLINE TO ANSWER
+                            </label>
+                          </div>
+                          <p>
+                            For this survey, “homelessness” means any time when
+                            you have been without a permanent and secure place
+                            to live, including sleeping in shelters, on the
+                            streets, or living temporarily with others without
+                            having your own permanent housing (e.g. couch
+                            surfing).
+                          </p>
+                        </div>
+                        <!-- QUESTION 3 -->
+
+                        <!-- QUESTION 4 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 4/19</strong>
+                          </h3>
+                          <div class="form-group">
+                            <label for="first_homeless_age">
+                              <h4>
+                                How old were you the first time you experienced
+                                homelessness?
+                              </h4>
+                            </label>
+                            <input
+                              type="number"
+                              id="first_homeless_age"
+                              name="first_homeless_age"
+                              class="form-control"
+                              placeholder="Enter age"
+                              style="max-width: 200px"
+                            />
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />PARTNER
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="homelessness_duration">
+                              <h4>
+                                In total, for how much time have you experienced
+                                homelessness over the PAST YEAR?
+                              </h4>
+                            </label>
+                            <div class="row">
+                              <div class="col-2">
+                                <input
+                                  type="text"
+                                  id="homelessness_duration"
+                                  name="homelessness_duration"
+                                  class="form-control"
+                                  placeholder="Enter duration"
+                                  style="max-width: 200px"
+                                />
+                              </div>
+                              <div class="col-3">
+                                <select
+                                  id="duration_unit"
+                                  name="duration_unit"
+                                  class="form-control"
+                                >
+                                  <option value="days">DAYS</option>
+                                  <option value="weeks">WEEKS</option>
+                                  <option value="months">MONTHS</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />PARTNER
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 4 -->
+
+                        <!-- QUESTION 5 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 5/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            Have you stayed in a homeless shelter in the past
+                            year?
+                          </h4>
+                          <div class="form-group select">
+                            <div class="styled-select">
+                              <select class="required" name="select_5">
+                                <option value="" selected>Select</option>
+                                <option value="YES">YES</option>
+                                <option value="NO">NO</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>
+                                <option value="DECLINE TO ANSWER">
+                                  DECLINE TO ANSWER
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- Question 5b -->
+                          <h4 class="main_question">
+                            If not, what are the main reasons?
+                          </h4>
+                          <div class="form-group">
+                            <div
+                              class="form-group checkbox-group"
+                              style="
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 10px;
+                              "
+                            >
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />TURNED AWAY (SHELTERS ARE FULL)
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />TURNED AWAY (BANNED)
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />LACK OF TRANSPORTATION
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />FEAR FOR SAFETY
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />BED BUGS & OTHER PESTS
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />CROWDED
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />OTHER:
+                                  <input
+                                    type="text"
+                                    name="other_reason"
+                                    class="form-control other-reason-input"
+                                    placeholder="Please specify"
+                                  />
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DON'T KNOW
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_5[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DECLINE TO ANSWER
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 5 -->
+
+                        <!-- QUESTION 6 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 6/19</strong>
+                          </h3>
+                          <div>
+                            <h4 class="main_question">
+                              Did you come to Canada as an immigrant, refugee,
+                              or a refugee claimant?
+                            </h4>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_66">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES, IMMIGRANT</option>
+                                  <option value="INUIT">YES, REFUGEE</option>
+                                  <option value="MÉTIS">
+                                    YES, REFUGEE CLAIMANT
+                                  </option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div>
+                              <h4 class="main_question">
+                                If YES, how long have you been in Canada?
+                              </h4>
+                              <div class="form-inline-group">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    id="duration_in_canada"
+                                    name="duration_in_canada"
+                                    class="form-control"
+                                    placeholder="Length (e.g., 2 YEARS)"
+                                    style="max-width: 200px"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="arrival_date">OR DATE:</label>
+                                  <input
+                                    type="date"
+                                    id="arrival_date"
+                                    name="arrival_date"
+                                    class="form-control"
+                                    style="max-width: 200px"
+                                  />
+                                </div>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_6[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck"
+                                  />DON'T KNOW
+                                </label>
+                              </div>
+
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_6[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck"
+                                  />DECLINE TO ANSWER
+                                </label>
+                              </div>
+                            </div>
+
+                            <div>
+                              <h4 class="main_question">
+                                Are you a Canadian Citizen?
+                              </h4>
+                              <div class="form-group select">
+                                <div class="styled-select">
+                                  <select class="required" name="select_6">
+                                    <option value="" selected>Select</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                    <option value="DON'T KNOW">
+                                      DON'T KNOW
+                                    </option>
+                                    <option value="DECLINE TO ANSWER">
+                                      DECLINE TO ANSWER
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div
+                                class="form-group conditional-group"
+                                id="non-citizen-options"
+                              >
+                                <label for="non_citizen_status"
+                                  >If NO, please specify:</label
+                                >
+                                <select
+                                  id="non_citizen_status"
+                                  name="non_citizen_status"
+                                  class="form-control"
+                                  style="max-width: 400px"
+                                >
+                                  <option value="permanent_resident">
+                                    PERMANENT RESIDENT
+                                  </option>
+                                  <option value="refugee_claimant">
+                                    REFUGEE CLAIMANT
+                                  </option>
+                                  <option value="temporary_foreign_worker">
+                                    TEMPORARY FOREIGN WORKER
+                                  </option>
+                                  <option value="international_student">
+                                    INTERNATIONAL STUDENT
+                                  </option>
+                                  <option value="other">
+                                    OTHER (PLEASE SPECIFY)
+                                  </option>
+                                </select>
+                                <input
+                                  type="text"
+                                  name="other_status"
+                                  class="form-control"
+                                  placeholder="Please specify"
+                                  style="max-width: 200px; display: none"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <script>
+                            document
+                              .getElementById("non_citizen_status")
+                              .addEventListener("change", function () {
+                                var otherInput =
+                                  document.getElementsByName("other_status")[0];
+                                if (this.value === "other") {
+                                  otherInput.style.display = "block";
+                                } else {
+                                  otherInput.style.display = "none";
+                                }
+                              });
+                          </script>
+                        </div>
+                        <!-- QUESTION 6 -->
+
+                        <!-- QUESTION 7 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 7/19</strong>
+                          </h3>
+                          <div class="form-group">
+                            <label for="length_in_ottawa">
+                              <h4>How long have you been in Ottawa?</h4>
+                            </label>
+                            <input
+                              type="text"
+                              id="length_in_ottawa"
+                              name="length_in_ottawa"
+                              class="form-control"
+                              placeholder="Length"
+                              style="max-width: 200px"
+                            />
+                            <select
+                              id="duration_unit_ottawa"
+                              name="duration_unit_ottawa"
+                              class="form-control"
+                              style="max-width: 200px"
+                            >
+                              <option value="days">DAYS</option>
+                              <option value="weeks">WEEKS</option>
+                              <option value="months">MONTHS</option>
+                              <option value="years">YEARS</option>
+                            </select>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />ALWAYS BEEN HERE
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- Question 7b -->
+                          <div class="form-group">
+                            <label>
+                              <h4>Where did you live before you came here?</h4>
+                            </label>
+                            <input
+                              type="text"
+                              name="previous_city"
+                              class="form-control"
+                              placeholder="CITY"
+                              style="max-width: 300px"
+                            />
+                            <input
+                              type="text"
+                              name="previous_region"
+                              class="form-control"
+                              placeholder="PROVINCE/TERRITORY/COUNTRY"
+                              style="max-width: 300px"
+                            />
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- Question 7c -->
+                          <div class="form-group">
+                            <label>
+                              <h4>
+                                What is the main reason you came to Ottawa?
+                              </h4>
+                            </label>
+                            <select
+                              id="reason_for_coming"
+                              name="reason_for_coming"
+                              class="form-control"
+                              style="max-width: 400px"
+                            >
+                              <option value="emergency_shelter">
+                                TO ACCESS EMERGENCY SHELTER(S)
+                              </option>
+                              <option value="services_and_supports">
+                                TO ACCESS SERVICES AND SUPPORTS
+                              </option>
+                              <option value="family_moved_here">
+                                FAMILY MOVED HERE
+                              </option>
+                              <option value="visit_friends_family">
+                                TO VISIT FRIENDS/FAMILY
+                              </option>
+                              <option value="find_housing">
+                                TO FIND HOUSING
+                              </option>
+                              <option value="employment_seeking">
+                                EMPLOYMENT (SEEKING)
+                              </option>
+                              <option value="employment_secured">
+                                EMPLOYMENT (SECURED)
+                              </option>
+                              <option value="attend_school">
+                                TO ATTEND SCHOOL
+                              </option>
+                              <option value="fear_for_safety">
+                                FEAR FOR SAFETY
+                              </option>
+                              <option value="recreation_shopping">
+                                RECREATION/SHOPPING
+                              </option>
+                              <option value="other">OTHER</option>
+                            </select>
+                            <input
+                              type="text"
+                              name="other_reason_for_coming"
+                              class="form-control"
+                              placeholder="Please specify"
+                              style="
+                                display: none;
+                                max-width: 300px;
+                                margin-bottom: 10px;
+                              "
+                            />
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+
+                          <script>
+                            // JavaScript to show/hide the 'other reason' input field based on the selected option
+                            document
+                              .getElementById("reason_for_coming")
+                              .addEventListener("change", function () {
+                                var otherInput = document.getElementsByName(
+                                  "other_reason_for_coming"
+                                )[0];
+                                if (this.value === "other") {
+                                  otherInput.style.display = "block";
+                                } else {
+                                  otherInput.style.display = "none";
+                                }
+                              });
+                          </script>
+                        </div>
+                        <!-- QUESTION 7 -->
+
+                        <!-- QUESTION 8 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 8/19</strong>
+                          </h3>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              Do you identify as First Nations, Inuit, or Métis,
+                              or do you have North American Indigenous ancestry?
+                            </h4>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_8">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">
+                                    YES, FIRST NATIONS
+                                  </option>
+                                  <option value="INUIT">YES, INUIT</option>
+                                  <option value="MÉTIS">YES, MÉTIS</option>
+                                  <option value="INDIGENOUS">
+                                    YES, INDIGENOUS ANCESTRY
+                                  </option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              In addition to your response in the question
+                              above, do you identify with any of the racial
+                              identities listed below?
+                            </h4>
+                            <div
+                              class="form-group checkbox-group"
+                              style="
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 10px;
+                              "
+                            >
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />ARAB (e.g., Syrian, Egyptian, Yemeni)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />ASIAN-EAST (e.g., Chinese, Korean, Japanese)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />ASIAN- SOUTH-EAST (e.g., Filipino,
+                                  Vietnamese, Cambodian)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />ASIAN-SOUTH OR INDO-CARIBBEAN (e.g., Indian,
+                                  Pakistani)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />ASIAN-WEST (e.g., Iranian, Afghan)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />BLACK-CANADIAN/AMERICAN
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />BLACK-AFRICAN (e.g., Ghanaian, Ethiopian)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />LATIN AMERICAN (e.g., Brazilian, Mexican)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />WHITE (e.g. European, French, Ukrainian)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />BLACK-AFRO-CARIBBEAN OR AFRO-LATINX (e.g.,
+                                  Jamaican, Haitian)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  NOT LISTED (PLEASE SPECIFY):
+                                </label>
+                                <input
+                                  type="text"
+                                  name="other_racial_identity"
+                                  class="form-control"
+                                  placeholder="Please specify"
+                                  style="
+                                    grid-column: span 2;
+                                    max-width: 300px;
+                                    margin-top: 10px;
+                                  "
+                                />
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />IDENTIFY AS INDIGENOUS ONLY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DON'T KNOW
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_8[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DECLINE TO ANSWER
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              If you do identify as Indigenous, which Indigenous
+                              community are you from?
+                            </h4>
+                            <input
+                              type="text"
+                              name="indigenous_community"
+                              class="form-control"
+                              placeholder="Community / Reserve Name"
+                            />
+
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 8 -->
+
+                        <!-- QUESTION 9 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 9/19</strong>
+                          </h3>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              Have you ever served in the Canadian Military or
+                              RCMP?
+                            </h4>
+                            <div class="form-group radio_questions">
+                              <label
+                                >YES, MILITARY
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >YES, RCMP
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >BOTH MILITARY AND RCMP
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >NO
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >DON'T KNOW
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >DECLINE TO ANSWER
+                                <input
+                                  name="question_9"
+                                  type="radio"
+                                  value="My budget is under $500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 9 -->
+
+                        <!-- QUESTION 10 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 10/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            As a child or youth, were you ever in foster care or
+                            in a youth group home?
+                          </h4>
+                          <div class="form-group radio_questions">
+                            <label
+                              >YES
+                              <input
+                                name="question_10"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >NO
+                              <input
+                                name="question_10"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >DON'T KNOW
+                              <input
+                                name="question_10"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >DECLINE TO ANSWER
+                              <input
+                                name="question_10"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              Approximately how long after leaving foster
+                              care/group home did you become homeless?
+                            </h4>
+                            <input
+                              type="text"
+                              name="time_after_foster_homelessness"
+                              class="form-control"
+                              placeholder="Enter duration"
+                              style="max-width: 200px"
+                            />
+                            <div class="form-group radio_questions">
+                              <label
+                                >DON'T KNOW
+                                <input
+                                  name="question_1000"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >DECLINE TO ANSWER
+                                <input
+                                  name="question_1000"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 10 -->
+
+                        <!-- QUESTION 11 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 11/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            Do you identify as having any of the following
+                            health challenges at this time:
+                          </h4>
+
+                          <!-- Illness or Medical Condition -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >ILLNESS OR MEDICAL CONDITION (e.g., diabetes,
+                                arthritis, TB, HIV)</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_11">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Physical Limitation -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >LIMITATION (e.g., challenges with mobility,
+                                physical abilities or dexterity)</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_111">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Learning or Cognitive Limitations -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >LEARNING OR COGNITIVE LIMITATIONS (e.g.,
+                                dyslexia, autism spectrum disorder)</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_1111">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Mental Health Issue -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >MENTAL HEALTH ISSUE (diagnosed/undiagnosed)
+                                (e.g., depression, PTSD, bipolar
+                                disorder)</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_11111">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Substance Use Issue -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >SUBSTANCE USE ISSUE (e.g., tobacco use,
+                                alcohol, opiates)</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_111111">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Acquired Brain Injury -->
+                          <div class="form-group">
+                            <p>
+                              <strong
+                                >Do you identify as having an acquired brain
+                                injury that happened after birth?</strong
+                              >
+                            </p>
+                            <div class="form-group select">
+                              <div class="styled-select">
+                                <select class="required" name="select_1111111">
+                                  <option value="" selected>Select</option>
+                                  <option value="YES">YES</option>
+                                  <option value="NO">NO</option>
+                                  <option value="DON'T KNOW">DON'T KNOW</option>
+                                  <option value="DECLINE TO ANSWER">
+                                    DECLINE TO ANSWER
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 11 -->
+
+                        <!-- QUESTION 12 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 12/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            What gender do you identify with?
+                          </h4>
+                             <div class="form-group radio_questions">
+                              <label
+                                >MAN
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >WOMAN
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >TWO-SPIRIT
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >TRANS WOMAN
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >TRANS MAN
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >ON-BINARY (GENDERQUEER)
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+
+                            <div class="form-group radio_questions">
+                              <label
+                                >DON'T KNOW
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >DECLINE TO ANSWER
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >NOT LISTED:
+                                <input
+                                  name="question_12"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                                <input
+                                  type="text"
+                                  name="other_gender"
+                                  class="form-control inline-input"
+                                  placeholder="Please specify"
+                                /> </label
+                              ><br />
+                            </div>
+                          
+                        </div>
+                        <!-- QUESTION 12 -->
+
+                        <!-- QUESTION 13 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 13/19</strong>
+                          </h3>
+                          <h3 class="main_question">
+                            How do you describe your sexual orientation, for
+                            example straight, gay, lesbian?
+                          </h3>
+               
+                            <div class="form-group radio_questions">
+                              <label
+                                >STRAIGHT/HETEROSEXUAL
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >GAY
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >LESBIAN
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >BISEXUAL
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >TWO-SPIRIT
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >PANSEXUAL
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >ASEXUAL
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >QUESTIONING
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >QUEER
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+
+                            <div class="form-group radio_questions">
+                              <label
+                                >DON'T KNOW
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >DECLINE TO ANSWER
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                              </label>
+                            </div>
+                            <div class="form-group radio_questions">
+                              <label
+                                >NOT LISTED:
+                                <input
+                                  name="question_13"
+                                  type="radio"
+                                  value="My budget is between $1000 and $1500"
+                                  class="icheck required"
+                                />
+                                <input
+                                  type="text"
+                                  name="other_sexual_orientation"
+                                  class="form-control inline-input"
+                                  placeholder="Please specify"
+                                />
+                              </label>
+                            </div>
+                          
+                        </div>
+                        <!-- QUESTION 13 -->
+
+                        <!-- QUESTION 14 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 14/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            What happened that caused you to lose your housing
+                            most recently?
+                          </h4>
+                          <br />
+                          <div
+                            class="form-group checkbox-group"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(3, 1fr);
+                              gap: 20px;
+                            "
+                          >
+                            <!-- Column A: Housing and Financial Issues -->
+                            <div>
+                              <strong>A: HOUSING AND FINANCIAL ISSUES</strong
+                              ><br />
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />NOT ENOUGH INCOME FOR HOUSING
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />UNFIT/UNSAFE HOUSING CONDITION
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />BUILDING SOLD OR RENOVATED
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />OWNER MOVED IN
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />LANDLORD/TENANT CONFLICT
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />COMPLAINT (E.G. PETS/NOISE/DAMAGE)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />LEFT THE COMMUNITY/RELOCATED
+                                </label>
+                              </div>
+                            </div>
+
+                            <!-- Column B: Interpersonal and Family Issues -->
+                            <div>
+                              <strong>B: INTERPERSONAL AND FAMILY ISSUES</strong
+                              ><br />
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />CONFLICT WITH: SPOUSE / PARTNER
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />CONFLICT WITH: PARENT / GUARDIAN
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />CONFLICT WITH: OTHER
+                                </label>
+                                <input
+                                  type="text"
+                                  id="other_abuse_input"
+                                  name="other_abuse"
+                                  class="form-control"
+                                  placeholder="Please specify"
+                                  style="display: none"
+                                />
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />EXPERIENCED ABUSE BY: SPOUSE / PARTNER
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />EXPERIENCED ABUSE BY: PARENT / GUARDIAN
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  EXPERIENCED ABUSE BY: OTHER
+                                </label>
+                                <input
+                                  type="text"
+                                  id="other_abuse_input"
+                                  name="other_abuse"
+                                  class="form-control"
+                                  placeholder="Please specify"
+                                  style="display: none"
+                                />
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DEPARTURE OF FAMILY MEMBER
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14B[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />EXPERIENCED DISCRIMINATION
+                                </label>
+                              </div>
+                            </div>
+
+                            <!-- Column C: Health or Corrections -->
+                            <div>
+                              <strong>C: HEALTH OR CORRECTIONS</strong><br />
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14C[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />PHYSICAL HEALTH ISSUE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14C[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />MENTAL HEALTH ISSUE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14C[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />SUBSTANCE USE ISSUE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14C[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />HOSPITALIZATION OR TREATMENT PROGRAM
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_14C[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />INCARCERATION (JAIL OR PRISON)
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Other Reasons -->
+                          <div style="margin-top: 20px">
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_14C[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />OTHER REASON:
+                              </label>
+                              <input
+                                type="text"
+                                name="other_housing_loss_reason"
+                                class="form-control"
+                                placeholder="Please specify"
+                              />
+                            </div>
+                          </div>
+
+                          <h4 class="main_question">
+                            Was your most recent housing loss related to the
+                            COVID-19 pandemic?
+                          </h4>
+                          <div class="form-group select">
+                            <div class="styled-select">
+                              <select class="required" name="select_14D">
+                                <option value="" selected>Select</option>
+                                <option value="YES">YES</option>
+                                <option value="NO">NO</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>
+                                <option value="DECLINE TO ANSWER">
+                                  DECLINE TO ANSWER
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <h4 class="main_question">
+                            How long ago did that happen (that you lost your
+                            housing most recently)?
+                          </h4>
+                          <div
+                            style="
+                              display: flex;
+                              align-items: center;
+                              gap: 10px;
+                            "
+                          >
+                            <input
+                              type="text"
+                              name="time_since_housing_loss"
+                              class="form-control"
+                              placeholder="Enter duration"
+                              style="flex-grow: 1; max-width: 200px"
+                            />
+                            <select
+                              name="time_unit"
+                              class="form-control"
+                              style="flex-grow: 1; max-width: 200px"
+                            >
+                              <option value="days">DAYS</option>
+                              <option value="weeks">WEEKS</option>
+                              <option value="months">MONTHS</option>
+                              <option value="years">YEARS</option>
+                            </select>
+                          </div>
+                          <div
+                            class="checkbox-group"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(
+                                auto-fill,
+                                minmax(250px, 1fr)
+                              );
+                              gap: 10px;
+                            "
+                          >
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DON'T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 14 -->
+                        <script>
+                          // JavaScript to toggle the display of the text inputs
+                          document
+                            .getElementById("other_conflict_checkbox")
+                            .addEventListener("change", function () {
+                              document.getElementById(
+                                "other_conflict_input"
+                              ).style.display = this.checked ? "block" : "none";
+                            });
+
+                          document
+                            .getElementById("other_abuse_checkbox")
+                            .addEventListener("change", function () {
+                              document.getElementById(
+                                "other_abuse_input"
+                              ).style.display = this.checked ? "block" : "none";
+                            });
+                        </script>
+                        <!-- QUESTION 15 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 15/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            What are your sources of income?
+                          </h4>
+                          <div
+                            class="form-group checkbox-group"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(3, 1fr);
+                              gap: 15px;
+                            "
+                          >
+                            <!-- Column 1 -->
+                            <div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />FULL TIME EMPLOYMENT
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />PART TIME EMPLOYMENT
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />CASUAL EMPLOYMENT (E.G. CONTRACT WORK)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />INFORMAL INCOME SOURCES (E.G. BOTTLE
+                                  RETURNS, PANHANDLING)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />MONEY FROM FAMILY/FRIENDS
+                                </label>
+                              </div>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />EMPLOYMENT INSURANCE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DISABILITY BENEFIT [Name of PROV. DISABILITY
+                                  BENEFIT]
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />SENIORS BENEFITS (E.G. CPP/OAS/GIS)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />WELFARE/SOCIAL ASSISTANCE [Prov. Benefit]
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />VETERAN/VAC BENEFITS
+                                </label>
+                              </div>
+                            </div>
+
+                            <!-- Column 3 -->
+                            <div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  CHILD AND FAMILY TAX BENEFITS
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />GST/HST REFUND
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />OTHER MONEY FROM A SERVICE AGENCY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />OTHER SOURCE:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="other_income_source"
+                                  name="other_income_source"
+                                  class="form-control"
+                                  placeholder="Please specify"
+                                  style="display: none; margin-bottom: 10px"
+                                />
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />NO INCOME
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DON'T KNOW
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_15A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />DECLINE TO ANSWER
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 15 -->
+                        <script>
+                          // Select all checkboxes with class 'income_source_checkbox'
+                          var checkboxes = document.querySelectorAll(
+                            ".income_source_checkbox"
+                          );
+
+                          checkboxes.forEach(function (checkbox) {
+                            checkbox.addEventListener("change", function () {
+                              // Check if 'other' checkbox is checked
+                              var otherCheckbox = document.querySelector(
+                                "input[name='income_source'][value='other']"
+                              );
+                              var otherInput = document.getElementById(
+                                "other_income_source"
+                              );
+                              otherInput.style.display = otherCheckbox.checked
+                                ? "block"
+                                : "none";
+                            });
+                          });
+                        </script>
+                        <!-- QUESTION 16 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 16/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            What is the highest level of education you
+                            completed?
+                          </h4>
+                          <div
+                            class="form-group checkbox-group"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(2, 1fr);
+                              gap: 10px;
+                            "
+                          >
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                PRIMARY SCHOOL
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                SOME HIGH SCHOOL
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                HIGH SCHOOL GRADUATE/GED
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                SOME POST SECONDARY
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                POST SECONDARY GRADUATE
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                GRADUATE DEGREE (E.G., MASTERS, Ph.D.)
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                NO FORMAL EDUCATION
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+
+                                DON’T KNOW
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_16A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                DECLINE TO ANSWER
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 16 -->
+
+                        <!-- QUESTION 17 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 17/19</strong>
+                          </h3>
+                          <h4 class="main_question">
+                            Do you want to get into permanent housing?
+                          </h4>
+                          <div class="form-group radio_questions">
+                            <label
+                              >YES
+                              <input
+                                name="question_1"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >NO
+                              <input
+                                name="question_1"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >DON'T KNOW
+                              <input
+                                name="question_1"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                          <div class="form-group radio_questions">
+                            <label
+                              >DECLINE TO ANSWER
+                              <input
+                                name="question_1"
+                                type="radio"
+                                value="My budget is between $1000 and $1500"
+                                class="icheck required"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <!-- QUESTION 17 -->
+
+                        <!-- QUESTION 18 -->
+                        <div class="step">
+                          <h3 class="main_question">
+                            <strong>Question 18/19</strong>
+                          </h3>
+
+                          <h4 class="main_question">
+                            What challenges or problems have you experienced
+                            when trying to find housing?
+                          </h4>
+                          <div
+                            class="form-group checkbox-group"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(2, 1fr);
+                              gap: 10px;
+                            "
+                          >
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                LOW INCOME
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                NO INCOME ASSISTANCE
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                RENTS TOO HIGH
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                POOR HOUSING CONDITIONS
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                DOMESTIC VIOLENCE
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                HEALTH/DISABILITY ISSUES
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                MENTAL HEALTH ISSUES
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                ADDICTION
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                FAMILY BREAKDOWN/CONFLICT
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                CRIMINAL HISTORY
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                PETS
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                CHILDREN
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                DISCRIMINATION
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                DON'T WANT HOUSING
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                NO BARRIERS TO HOUSING
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                />
+                                DECLINE TO ANSWER
+                              </label>
+                            </div>
+                            <div class="form-group checkbox_questions">
+                              <label>
+                                <input
+                                  name="question_18A[]"
+                                  type="checkbox"
+                                  value="other"
+                                  class="icheck required"
+                                />
+                                OTHER:
+                              </label>
+                              <input
+                                type="text"
+                                name="other_housing_challenges"
+                                class="form-control"
+                                placeholder="Please specify"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 18 -->
+                        <script>
+                          document.addEventListener(
+                            "DOMContentLoaded",
+                            function () {
+                              // Get the checkbox and the text input element
+                              var otherCheckbox = document.querySelector(
+                                "input[name='housing_challenges'][value='other']"
+                              );
+                              var otherInput = document.querySelector(
+                                "input[name='other_housing_challenges']"
+                              );
+
+                              // Initially hide the text input
+                              otherInput.style.display = "none";
+
+                              // Add an event listener to the checkbox
+                              otherCheckbox.addEventListener(
+                                "change",
+                                function () {
+                                  // Toggle the display of the text input based on the checkbox state
+                                  if (otherCheckbox.checked) {
+                                    otherInput.style.display = "block";
+                                  } else {
+                                    otherInput.style.display = "none";
+                                    otherInput.value = ""; // Clear the input when checkbox is unchecked
+                                  }
+                                }
+                              );
+                            }
+                          );
+                        </script>
+                        <!-- QUESTION 19 -->
+                        <div class="submit step">
+                          <h3 class="main_question">
+                            <strong>Question 19/19</strong>
+                          </h3>
+                          <div class="form-group">
+                            <h4 class="main_question">
+                              What experiences would you need support with to
+                              help you through your housing journey?
+                            </h4>
+                            <div
+                              class="form-group checkbox-group"
+                              style="
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 10px;
+                              "
+                            >
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  SERIOUS/ONGOING MEDICAL CONDITION
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  ADDICTION OR SUBSTANCE USE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  MENTAL HEALTH (Counselling, treatment, etc.)
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  PHYSICAL DISABILITY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  LEARNING DISABILITY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  BRAIN INJURY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  PREGNANCY
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  NONE OF THE ABOVE
+                                </label>
+                              </div>
+                              <div class="form-group checkbox_questions">
+                                <label>
+                                  <input
+                                    name="question_19A[]"
+                                    type="checkbox"
+                                    value="Web site design"
+                                    class="icheck required"
+                                  />
+                                  DECLINE TO ANSWER
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QUESTION 19 -->
+
+                        <!-- QUESTION 20 -->
+                        <!-- if exits extra question here!!! -->
+                        <!-- QUESTION 20 -->
+
+                        <!-- ALL QUESTIONS HERE -->
+
+                        <!-- LAST  QUESTION BEFORE TO SUBMITT -->
+                        <!-- LAST  QUESTION BEFORE TO SUBMITT -->
+                      </div>
+                      <!-- /middle-wizard -->
+                      <div id="bottom-wizard">
+                        <button
+                          type="button"
+                          name="backward"
+                          class="backward StartSurvey"
+                        >
+                          Backward
+                        </button>
+                        <button
+                          type="button"
+                          name="forward"
+                          class="forward StartSurvey"
+                        >
+                          Forward
+                        </button>
+                        <button
+                          type="submit"
+                          name="process"
+                          class="submit StartSurvey"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                      <!-- /bottom-wizard -->
+                    </form>
+                  </div>
+                  <!-- /Wizard container -->
+                </div>
+                <!-- /col -->
+              </div>
+              <!-- /row -->
+            </div>
+            <!-- /TAB 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+          </div>
+          <!-- /tab content -->
+        </div>
+        <!-- /container-fluid -->
+      </div>
+      <!-- /wrapper_in -->
+    </div>
+    <!-- /main_container -->
+
+    <!-- SCRIPTS -->
+    <!-- Jquery-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Common script -->
+    <script src="js/common_scripts_min.js"></script>
+    <!-- Theme script -->
+    <script src="js/functions.js"></script>
+    <!-- Google map -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/mapmarker.jquery.js"></script>
+    <script src="js/mapmarker_func.jquery.js"></script>
+  </body>
+</html>
